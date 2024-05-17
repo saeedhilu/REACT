@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
-// import Listing from './component/Listing'
-import Apps from './component/Apps'
+import Welcome from './component/Welcome'
+import { Greet } from './component/Greet'
 export default class App extends Component {
+
   render() {
     return (
-
-      <div><Apps/></div>
+      <div>
+<Greet/>
+<Welcome/>
+      </div>
+      
     )
   }
 }

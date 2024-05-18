@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React, { Component, Fragment } from "react";
 
-export default class FragmentDemo extends Fragment {
+export default class FragmentDemo extends Component {
   render() {
     return (
       <Fragment>
@@ -10,6 +10,7 @@ export default class FragmentDemo extends Fragment {
     );
   }
 }
+
 
 // Using the Shorthand Syntax
 
@@ -38,3 +39,24 @@ export default class FragmentDemo extends Fragment {
 //  Using the key
 
 
+// import React, { Component } from 'react'
+
+// export default class FragmentDemo extends Component {
+//   render() {
+//     const values = ['hey']
+
+//     return (
+    
+    
+//         <React.Fragment key="key">
+//             {
+//                 this.values.map((value)=>{
+//                     return <h1>{value}</h1>
+//                 })
+//             }
+//         </React.Fragment>
+
+
+// )
+//   }
+// }

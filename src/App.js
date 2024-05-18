@@ -25,8 +25,9 @@ export default class App extends Component {
         <Greetparent/> 
         <Usergreet/> 
         <LIfecyleA/> 
-        <Styl name={true} /> 
         <FragmentDemo/> 
+        <Styl name={true} /> 
+       
         
 
 

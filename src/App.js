@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import Greet from './component/Greet'; // Assuming Greet is a functional component
-import InnerComponent from './component/Welcome';
-import Counter from './component/Counter';
-import Welcome from './component/Welcome'; // Assuming Welcome is a component in Welcome.js
-import Greetparent from './component/Greetparent';
-import Usergreet from './component/Usergreet';
-import Styl from './component/Styl'; 
-import Imge from './component/Imge'; 
-import Form from './component/Form';
-import LIfecyleA from './component/LIfecyleA';
+// import Greet from './component/Greet'; // Assuming Greet is a functional component
+// import InnerComponent from './component/Welcome';
+// import Counter from './component/Counter';
+// import Welcome from './component/Welcome'; // Assuming Welcome is a component in Welcome.js
+// import Greetparent from './component/Greetparent';
+// import Usergreet from './component/Usergreet';
+// import Styl from './component/Styl'; 
+// import Imge from './component/Imge'; 
+// import Form from './component/Form';
+// import LIfecyleA from './component/LIfecyleA';
+// import FragmentDemo from './component/FragmentDemo';
 
-
-import Purecomponent from './component/Purecomponent';
-import FragmentDemo from './component/FragmentDemo';
+import PureComponent from './component/Purecomponent';
+import Parentcomponent from './component/Parentcomponent';
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Form/>
+        {/* <Form/>
         <Greet name="saeed">
           <p>Heyy iam Children</p> 
         </Greet>
@@ -29,18 +29,18 @@ export default class App extends Component {
         <Usergreet/> 
         <LIfecyleA/> 
         <FragmentDemo/> 
-        <Purecomponent/> 
-        <Styl name={true} /> 
+        
+        <Styl name={true} />  */}
        
         
+       <Parentcomponent /> 
 
 
 
 
 
 
-
-      <Imge />
+      {/* <Imge /> */}
 
 
 

@@ -9,6 +9,9 @@ import Styl from './component/Styl';
 import Imge from './component/Imge'; 
 import Form from './component/Form';
 import LIfecyleA from './component/LIfecyleA';
+
+
+import Purecomponent from './component/Purecomponent';
 import FragmentDemo from './component/FragmentDemo';
 export default class App extends Component {
   render() {
@@ -26,6 +29,7 @@ export default class App extends Component {
         <Usergreet/> 
         <LIfecyleA/> 
         <FragmentDemo/> 
+        <Purecomponent/> 
         <Styl name={true} /> 
        
         

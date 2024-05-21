@@ -10,9 +10,10 @@ import React, { Component } from 'react';
 // import Form from './component/Form';
 // import LIfecyleA from './component/LIfecyleA';
 // import FragmentDemo from './component/FragmentDemo';
-
+import RefDemo from './component/RefDemo';
 import PureComponent from './component/Purecomponent';
 import Parentcomponent from './component/Parentcomponent';
+import RefParentForward from './component/RefParentForward';
 export default class App extends Component {
   render() {
     return (
@@ -34,6 +35,8 @@ export default class App extends Component {
        
         
        <Parentcomponent /> 
+       <RefDemo /> 
+       <RefParentForward /> 
 
 
 

@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import RegularComponent from './Regularcomponent';
-import Purecomponent from './Purecomponent';
-
+import React, { Component,PureComponent } from 'react';
+// import RegularComponent from './Regularcomponent';
+// // import Purecomponent from './Purecomponent';
+import Memo from './Memo';
+// export default class ParentComponent extends PureComponent {
 export default class ParentComponent extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +14,7 @@ export default class ParentComponent extends Component {
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        name: 'saeed nm'
+        name: 'saeed'
       });
     }, 2000);
   }
@@ -24,8 +25,9 @@ export default class ParentComponent extends Component {
     return (
       <div>
         <p>ParentComponent</p>
-        <RegularComponent name = {this.state.name}/>
-        <Purecomponent  name = {this.state.name}/>
+        <Memo/>
+        {/* <RegularComponent name = {this.state.name}/> */}
+        {/* <Purecomponent  name = {this.state.name}/> */}
       </div>
     );
   }

@@ -14,6 +14,7 @@ import RefDemo from './component/RefDemo';
 import PureComponent from './component/Purecomponent';
 import Parentcomponent from './component/Parentcomponent';
 import RefParentForward from './component/RefParentForward';
+import PortalDemo from './component/PortalDemo';
 export default class App extends Component {
   render() {
     return (
@@ -37,6 +38,7 @@ export default class App extends Component {
        <Parentcomponent /> 
        <RefDemo /> 
        <RefParentForward /> 
+       <PortalDemo/>
 
 
 

@@ -10,11 +10,14 @@ import React, { Component } from 'react';
 // import Form from './component/Form';
 // import LIfecyleA from './component/LIfecyleA';
 // import FragmentDemo from './component/FragmentDemo';
-import RefDemo from './component/RefDemo';
+// import RefDemo from './component/RefDemo';
 import PureComponent from './component/Purecomponent';
-import Parentcomponent from './component/Parentcomponent';
-import RefParentForward from './component/RefParentForward';
-import PortalDemo from './component/PortalDemo';
+// import Parentcomponent from './component/Parentcomponent';
+// import RefParentForward from './component/RefParentForward';
+// import PortalDemo from './component/PortalDemo';
+// import ErrorBoutry from './component/ErrorBoutry';
+import CounterClicking from './component/CounterClicking'; 
+import HoverCount from './component/HoverCount';
 export default class App extends Component {
   render() {
     return (
@@ -35,11 +38,13 @@ export default class App extends Component {
         <Styl name={true} />  */}
        
         
-       <Parentcomponent /> 
-       <RefDemo /> 
-       <RefParentForward /> 
-       <PortalDemo/>
-
+       {/* <Parentcomponent />  */}
+       {/* <RefDemo />  */}
+       {/* <RefParentForward />  */}
+       {/* <PortalDemo/> */}
+       {/* <ErrorBoutry name="saeed"/>   */}
+        <CounterClicking/>
+        <HoverCount/>
 
 
 

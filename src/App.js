@@ -16,8 +16,13 @@ import PureComponent from './component/Purecomponent';
 // import RefParentForward from './component/RefParentForward';
 // import PortalDemo from './component/PortalDemo';
 // import ErrorBoutry from './component/ErrorBoutry';
-import CounterClicking from './component/CounterClicking'; 
-import HoverCount from './component/HoverCount';
+// import CounterClicking from './component/CounterClicking'; 
+// import HoverCount from './component/HoverCount';
+import Renderuser from './component/Renderuser';
+import RenderHoverCount from './component/RenderHoverCount';
+import RenderCounterClicking from './component/RenderCounterClicking';
+
+        
 export default class App extends Component {
   render() {
     return (
@@ -43,9 +48,24 @@ export default class App extends Component {
        {/* <RefParentForward />  */}
        {/* <PortalDemo/> */}
        {/* <ErrorBoutry name="saeed"/>   */}
-        <CounterClicking/>
-        <HoverCount/>
+        {/* <CounterClicking/> */}
+        {/* <HoverCount /> */}
+        <h2>Click Counter</h2>
+    <Renderuser
+      render={(count, incrementCount) => (
+        <RenderCounterClicking count={count} incrementCount={incrementCount} />
+      )}
+    />
 
+    <h2>Hover Counter</h2>
+    <Renderuser
+      render={(count, incrementCount) => (
+        <RenderHoverCount count={count} incrementCount={incrementCount} />
+      )}
+    />
+        
+        {/* <RenderCounterClicking/>
+        <RenderHoverCount/> */}
 
 
 

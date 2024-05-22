@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
-
-export default class HoverCount extends Component {
-    state = {
-        count:0
-    }
-    incremeantCount= ()=>{
-        this.setState({count:this.state.count+1})
-    }
+import HocCounterl from './HocCounterl'
+class HoverCount extends Component {
+    
   render() {
+    const {count,incrementCount} = this.props
     return (
       <div>
      
-        <h1>{this.state.count} time Hover</h1>
-        <button onMouseOver={this.incremeantCount}>Over</button>
+        <h1>{this.props.name} {count} time Hover</h1>
+        <button onMouseOver={incrementCount}>Over</button>
         <hr />
       </div>
     )
   }
 }
+export default  HocCounterl(HoverCount)

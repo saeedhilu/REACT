@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
+import HocCounterl from './HocCounterl'
 
-export default class CounterClicking extends Component {
-    state = {
-        count:0
-    }
-    incremeantCount= ()=>{
-        this.setState({count:this.state.count+1})
-    }
+class CounterClicking extends Component {
+    
   render() {
+    const {count,incrementCount } = this.props
     return (
+       
       <div>
-        <h1>Counter {this.state.count} times Clicking</h1>
-        <button onClick={this.incremeantCount}>Click me</button>
+        <h1>Counter {count} times Clicked</h1>
+        <button onClick={incrementCount}>Click me </button>
         <hr />
       </div>
     )
   }
 }
+export default  HocCounterl(CounterClicking)

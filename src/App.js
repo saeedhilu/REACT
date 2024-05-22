@@ -18,11 +18,13 @@ import PureComponent from './component/Purecomponent';
 // import ErrorBoutry from './component/ErrorBoutry';
 // import CounterClicking from './component/CounterClicking'; 
 // import HoverCount from './component/HoverCount';
-import Renderuser from './component/Renderuser';
-import RenderHoverCount from './component/RenderHoverCount';
-import RenderCounterClicking from './component/RenderCounterClicking';
-
-        
+// import Renderuser from './component/Renderuser';
+// import RenderHoverCount from './component/RenderHoverCount';
+// import RenderCounterClicking from './component/RenderCounterClicking';
+import ContextA from './component/ContextA'; 
+import ContextC from './component/ContextC'; 
+import { UserProvider } from './component/UserContext'; 
+import HooksUseState from './component/HooksUseState';
 export default class App extends Component {
   render() {
     return (
@@ -50,7 +52,7 @@ export default class App extends Component {
        {/* <ErrorBoutry name="saeed"/>   */}
         {/* <CounterClicking/> */}
         {/* <HoverCount /> */}
-        <h2>Click Counter</h2>
+        {/* <h2>Click Counter</h2>
     <Renderuser
       render={(count, incrementCount) => (
         <RenderCounterClicking count={count} incrementCount={incrementCount} />
@@ -69,8 +71,15 @@ export default class App extends Component {
 
 
 
-
+        {/* <ContextA/>  */}
       {/* <Imge /> */}
+        {/* <UserConsumer value='saeed'>
+            <ContextC/>
+        </UserConsumer> */}
+      {/* <UserProvider value="saeed">
+          <ContextA/>
+      </UserProvider> */}
+      <HooksUseState/>
 
 
 
